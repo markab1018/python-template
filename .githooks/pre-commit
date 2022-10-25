@@ -1,0 +1,2 @@
+./ci-scripts/run-static-tests
+./ci-scripts/run-unit-tests

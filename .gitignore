@@ -1,0 +1,13 @@
+# VS Code ignores
+.vscode/*
+!.vscode/settings.json
+
+# MacOS ignores
+.DS_Store
+
+# Python ignores
+__pycache__/
+*.py[coi]
+.venv/
+.mypy_cache/
+.env

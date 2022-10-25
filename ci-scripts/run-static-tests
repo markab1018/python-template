@@ -1,0 +1,10 @@
+echo "running static tests"
+EXIT_STATUS=0
+echo "Running Black"
+black --version
+black `pwd` --fast -l 79 || EXIT_STATUS=$?
+echo "Running flake8"
+flake8 `pwd` --exclude .venv || EXIT_STATUS=$?
+echo "Running mypy"
+mypy `pwd`/src/ || EXIT_STATUS=$?
+exit $EXIT_STATUS
